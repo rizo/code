@@ -1,0 +1,23 @@
+(jbuild_version 1)
+
+(library
+ ((name Code)
+  (wrapped false)
+  (modules (Code))
+  (public_name code)
+  (libraries (ocaml-migrate-parsetree))))
+
+(library
+ ((name Ppx_code)
+  (public_name code.ppx)
+  (kind ppx_rewriter)
+  (modules (Ppx_code Ast))
+  (preprocess (pps (ppx_tools_versioned.metaquot_405)))
+  (ppx_runtime_libraries (code))
+  (libraries (code
+              ppx_tools_versioned.metaquot_405
+              fmt
+              ocaml-migrate-parsetree
+              ppx_tools_versioned
+              astring))))
+

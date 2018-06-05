@@ -1,0 +1,21 @@
+B /Users/rizo/.opam/4.06.1/lib/astring
+B /Users/rizo/.opam/4.06.1/lib/bytes
+B /Users/rizo/.opam/4.06.1/lib/fmt
+B /Users/rizo/.opam/4.06.1/lib/ocaml-migrate-parsetree
+B /Users/rizo/.opam/4.06.1/lib/ocaml/compiler-libs
+B /Users/rizo/.opam/4.06.1/lib/ppx_tools_versioned
+B /Users/rizo/.opam/4.06.1/lib/result
+B /Users/rizo/.opam/4.06.1/lib/uchar
+B ../_build/default/src/.Code.objs
+B ../_build/default/src/.Ppx_code.objs
+S /Users/rizo/.opam/4.06.1/lib/astring
+S /Users/rizo/.opam/4.06.1/lib/bytes
+S /Users/rizo/.opam/4.06.1/lib/fmt
+S /Users/rizo/.opam/4.06.1/lib/ocaml-migrate-parsetree
+S /Users/rizo/.opam/4.06.1/lib/ocaml/compiler-libs
+S /Users/rizo/.opam/4.06.1/lib/ppx_tools_versioned
+S /Users/rizo/.opam/4.06.1/lib/result
+S /Users/rizo/.opam/4.06.1/lib/uchar
+S .
+FLG -ppx '/Users/rizo/Developer/OCaml/Code/ppx_macro/_build/default/.ppx/ppx_tools_versioned.metaquot_405/ppx.exe --as-ppx --cookie '\''library-name="Code"'\'''
+FLG -w -40 -open Ppx_code__ -w -40

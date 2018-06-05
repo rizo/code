@@ -1,0 +1,15 @@
+opam-version: "1.2"
+maintainer: "rizo@odis.io"
+authors: ["Rizo Isrof"]
+homepage: "https://github.com/rizo/ppx_macro"
+bug-reports: "https://github.com/rizo/ppx_macro"
+dev-repo: "https://github.com/rizo/ppx_macro.git"
+license: "ISC"
+build:
+[[ "jbuilder" "build" "--only-packages" "%{name}%" "--root" "." "-j" jobs "@install" ]]
+available: [ ocaml-version >= "4.04" ]
+depends: [
+  "jbuilder" {build}
+  "ocaml-migrate-parsetree"
+  "astring"
+]
